@@ -85,7 +85,7 @@ ignoreFiles = [ "\\.foo$", "\\.boo$" ]
     # email = "mailto:luka@strizic.info"
     github = "https://www.github.com/ChubbyHunteR"
     linkedin = "https://www.linkedin.com/in/lstrz"
-    cv = "/cv"
+    cv = "/LSCV.pdf"
 
     # Footer; Markdown accepted here.
     footer = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img height="24" width="24" alt="Creative Commons License" style="border-width:0" src="/assets/cc.svg" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img height="24" width="24" alt="Creative Commons License" style="border-width:0" src="/assets/by.svg" /></a>'
