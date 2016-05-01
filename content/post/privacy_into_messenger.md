@@ -111,7 +111,7 @@ This meant that our local API was now located on a CSP trusted domain.
 However, we still needed to access the API over SSL (as the CSP required `https://`), so we created a proxy server to our GPG API server, running with locally generated SSL certificates.
 Getting the browser to trust the generated SSL certificate, being the last hurdle, was not much of a problem.
 
-![Warning, hack in progress!](https://cdn-images-1.medium.com/freeze/max/60/1*w_5AG9SzEJ3--E-27k2yyA.jpeg)
+![Warning, hack in progress!](https://cdn-images-1.medium.com/max/800/1*w_5AG9SzEJ3--E-27k2yyA.jpeg)
 
 ## The anticipation
 
