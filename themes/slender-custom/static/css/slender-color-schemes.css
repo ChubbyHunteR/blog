@@ -23,10 +23,3 @@ header a, footer a {
 .pagination li a {
     color: #151515;
 }
-
-.article-read-more a:hover,
-.pagination li a {
-    background-color: #151515;
-    color: #FFF;
-    padding: 2px 4px;
-}
