@@ -1,2 +1,2 @@
 # blog-code
-Repository for the code published on my blog, <luka.strizic.info>.
+Repository for my [blog](https://luka.strizic.info).
