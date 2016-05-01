@@ -62,11 +62,6 @@ ignoreFiles = [ "\\.foo$", "\\.boo$" ]
     name = "Luka Strizic"
 
 [params]
-
-    # Change the color scheme of Slender.
-    # See above for preview and list of color schemes.
-    colorscheme = "black"
-
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
     # This will be overridden by whatever is set by the page or post,
