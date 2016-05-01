@@ -1,4 +1,4 @@
-baseurl = "http://luka.strizic.info/"
+baseurl = "https://luka.strizic.info/"
 title = "Undefined Reference"
 theme = "slender-custom"
 defaultExtension = "html"
@@ -13,8 +13,8 @@ pygmentsStyle = "monokai"
 
 watch = true
 verbose = false
-log = false
-verboseLog = false
+log = true
+verboseLog = true
 hasCJKLanguage = false
 uglyURLs = false
 stepAnalysis = false
@@ -22,7 +22,7 @@ pygmentsUseClasses = false
 pluralizeListTitles = true
 preserveTaxonomyNames = false
 noTimes = false
-disableLiveReload = false
+disableLiveReload = true
 disableRSS = false
 disableSitemap = false
 disablePathToLower = true
@@ -31,15 +31,15 @@ buildFuture = false
 relativeURLs = true
 canonifyURLs = true
 
-source = ""
-config = "config.toml"
-archetypeDir = "archetype"
-contentDir = "content"
-dataDir = "data"
-layoutDir = "layouts"
-publishDir = "public"
-staticDir = "static"
-logFile = ""
+source = "/home/luka/web"
+config = "/home/luka/web/config.toml"
+archetypeDir = "/home/luka/web/archetype"
+contentDir = "/home/luka/web/content"
+dataDir = "/home/luka/web/data"
+layoutDir = "/home/luka/web/layouts"
+publishDir = "/home/luka/web/public"
+staticDir = "/home/luka/web/static"
+logFile = "/home/luka/web/hugo.log"
 
 googleAnalytics = ""
 editor = ""
@@ -77,18 +77,18 @@ ignoreFiles = [ "\\.foo$", "\\.boo$" ]
 
     # Tagline; HTML accepted here. Keep it concise.
     tagline = "to 'getBlogName()'"
-	
+
     # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
     # Remove, comment, or leave blank any field to leave them out.
-	# Email generated using http://www.closetnoc.org/mungemaster/mungemaster.pl
-	# and embedded in header.html
+    # Email generated using http://www.closetnoc.org/mungemaster/mungemaster.pl
+    # and embedded in header.html
     # email = "mailto:luka@strizic.info"
     github = "https://www.github.com/ChubbyHunteR"
     linkedin = "https://www.linkedin.com/in/lstrz"
-	cv = "/cv"
+    cv = "/cv"
 
     # Footer; Markdown accepted here.
-    footer = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img height="24" width="24" alt="Creative Commons License" style="border-width:0" src="http://mirrors.creativecommons.org/presskit/icons/cc.svg" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img height="24" width="24" alt="Creative Commons License" style="border-width:0" src="http://mirrors.creativecommons.org/presskit/icons/by.svg" /></a>'
+    footer = '<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img height="24" width="24" alt="Creative Commons License" style="border-width:0" src="/assets/cc.svg" /></a> <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img height="24" width="24" alt="Creative Commons License" style="border-width:0" src="/assets/by.svg" /></a>'
 
     # Google Analytics
     # Remove, comment, or leave it blank if you don't have one.
