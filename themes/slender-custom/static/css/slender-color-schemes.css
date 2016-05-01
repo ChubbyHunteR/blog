@@ -15,6 +15,10 @@ header a, footer a {
     color: #FFF;
 }
 
+#article-listing a{
+	color: #000;
+}
+
 .article-read-more a,
 .pagination li a {
     color: #151515;
