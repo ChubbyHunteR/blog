@@ -31,14 +31,14 @@ buildFuture = false
 relativeURLs = true
 canonifyURLs = true
 
-source = "/home/luka/blog"
-config = "/home/luka/blog/config.toml"
-archetypeDir = "/home/luka/blog/archetype"
-contentDir = "/home/luka/blog/content"
-dataDir = "/home/luka/blog/data"
-layoutDir = "/home/luka/blog/layouts"
-publishDir = "/home/luka/blog/public"
-staticDir = "/home/luka/blog/static"
+source = "/home/luka/git/blog"
+config = "/home/luka/blog/git/config.toml"
+archetypeDir = "/home/luka/blog/git/archetype"
+contentDir = "/home/luka/blog/git/content"
+dataDir = "/home/luka/blog/git/data"
+layoutDir = "/home/luka/blog/git/layouts"
+publishDir = "/home/luka/blog/git/public"
+staticDir = "/home/luka/blog/git/static"
 logFile = "/home/luka/blog/hugo.log"
 
 googleAnalytics = ""
