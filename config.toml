@@ -78,7 +78,7 @@ ignoreFiles = [ "\\.foo$", "\\.boo$" ]
     # Email generated using http://www.closetnoc.org/mungemaster/mungemaster.pl
     # and embedded in header.html
     # email = "mailto:luka@strizic.info"
-    github = "https://www.github.com/ChubbyHunteR"
+    github = "https://www.github.com/lstrz"
     linkedin = "https://www.linkedin.com/in/lstrz"
     cv = "/LSCV.pdf"
 
