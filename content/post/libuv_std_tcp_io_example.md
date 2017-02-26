@@ -285,7 +285,7 @@ Additional comments can be found in the code below:
 
 ### Complete code
 
-The complete code with the appropriate includes and defines can be found [in my GitHub repo](https://github.com/ChubbyHunteR/blog-code).
+The complete code with the appropriate includes and defines can be found [in my GitHub repo](https://github.com/lstrz/https://github.com/lstrz/libuv-std-io-tcp-io).
 
 ## Compilation and testing
 
