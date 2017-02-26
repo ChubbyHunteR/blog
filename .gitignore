@@ -1,7 +1,2 @@
-*.exe
-*log*
-*Caddy*
-*caddy*
 static/files/*
 public/*
-nohup.out
