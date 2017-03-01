@@ -102,7 +102,7 @@ Without it, everything under `RUN` in the `udev` rules would be executed in the 
 
 A thing to note at this point is that the `.start-backup-udev.sh` script only launches the `gnome-terminal` which invokes the actual backup script.
 Contents of `.start-backup-udev.sh` could have been written in the `udev` rules directly, but a lot less escaping is needed this way and it looks a bit prettier.
-The `.start-backup-udev.sh` script looks like this:
+The `.start-backup-udev.sh` script must be marked executable and looks like this:
 
     #!/bin/bash
     gnome-terminal -e "bash -c \"/home/luka/.backup.sh && echo Press any key to quit. && read -sn 1;\""
@@ -129,5 +129,5 @@ Before invoking `borg`, a check is added.
 The Bash scripts and the `udev` rules can be found [in my GitHub repo](https://github.com/lstrz/borg-udev-automation).
 
 A very useful resource when writing `udev` rules is the [Writing `udev` rules](http://www.reactivated.net/writing_udev_rules.html) guide, and, of course, Arch Linux [wiki pages on udev](https://wiki.archlinux.org/index.php/udev).
+Nicolas Bernaerts [did something similar](http://bernaerts.dyndns.org/linux/75-debian/54-debian-udev-backup). It could be useful to read his post because he included some details I omitted.
 
-Remember that the Bash scripts need to be marked executable!
