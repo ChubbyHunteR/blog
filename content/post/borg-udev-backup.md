@@ -42,7 +42,7 @@ To recap, the backup should start whenever I insert both the external drive and 
 
 It made sense to start with a Bash script that calls `borg` and makes a backup, because I used to run the backup manually initially.
 
-First, I started of with defining a few variables for ease of use.
+First, I started off with defining a few variables for ease of use.
 My OS is Ubuntu, which automatically mounts newly inserted media to `/media/user/uuid-of-the-partition/`.
 UUID of a partition doesn't change after the partition is formatted, so using UUIDs (or serial numbers in FAT32's case) is a good and constant reference.
 
@@ -101,7 +101,7 @@ Without it, everything under `RUN` in the `udev` rules would be executed in the 
     SYMLINK+="backup-key", IMPORT{program}="/usr/bin/xpub", RUN+="/bin/su $env{XUSER} -c '/home/luka/.start-backup-udev.sh'"
 
 A thing to note at this point is that the `.start-backup-udev.sh` script only launches the `gnome-terminal` which invokes the actual backup script.
-Contents of `.start-backup-udev.sh` could have been written in the `udev` rules directly, but much less escaping is needed this way and it looks a bit prettier.
+Contents of `.start-backup-udev.sh` could have been written in the `udev` rules directly, but a lot less escaping is needed this way and it looks a bit prettier.
 The `.start-backup-udev.sh` script looks like this:
 
     #!/bin/bash
@@ -109,7 +109,7 @@ The `.start-backup-udev.sh` script looks like this:
 
 ## Addition to the backup script
 
-Due to the way how `udev` works, the backup script needs to check if both drives are present.
+Due to the way that `udev` works, the backup script needs to check if both drives are present.
 The assumption is that if the drives are present, their partitions were automounted in `/media/user` directory, which is Ubuntu's default behavior.
 Two new variables define the device names.
 
@@ -130,4 +130,4 @@ The Bash scripts and the `udev` rules can be found [in my GitHub repo](https://g
 
 A very useful resource when writing `udev` rules is the [Writing `udev` rules](http://www.reactivated.net/writing_udev_rules.html) guide, and, of course, Arch Linux [wiki pages on udev](https://wiki.archlinux.org/index.php/udev).
 
-
+Remember that the Bash scripts need to be marked executable!
