@@ -98,7 +98,7 @@ carrier_signal = amplitude * np.sin(2 * np.pi * carrier_frequency * t + phase)
 
 A selected part of the carrier is shown in the following time plot.
 
-![Carrier signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/noisy-plots/1-Carrier-signal.png)
+![Carrier signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/not-noisy-plots/1-Carrier-signal.png)
 
 DSSS allows multiple parties to use the same medium simultaneously in time.
 That is achieved by PRN coding (pseudo-random number coding), a medium access control method which assigns each party a known pseudo-random code to modulate the carrier signal with.
@@ -136,7 +136,7 @@ The time scale in the following time plot is the same as in the previous plot.
 Not all 1023 PRN bits are displayed.
 The shown time period was selected to display a falling and a rising edge.
 
-![The PRN (C/A) signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/noisy-plots/2-Coarse-acquisition-code-signal.png)
+![The PRN (C/A) signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/not-noisy-plots/2-Coarse-acquisition-code-signal.png)
 
 If everything works correctly, the "Test" signal should be recoverable from and visible in the final signal at the receiver's end.
 Again, the series of bits needs to be modified slighly, to get a signal with the proper number of samples that fit in with the rest.
@@ -148,7 +148,7 @@ message_signal = binarize(np.repeat(message_code, t.size / message_code.size), [
 Time scale in the following time plot is different from the last two and displays every bit.
 It is visible that the message frequency is much lower than the PRN and the carrier frequency.
 
-![The message signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/noisy-plots/3-Message-signal.png)
+![The message signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/not-noisy-plots/3-Message-signal.png)
 
 ## The DSSS magic
 
@@ -173,7 +173,7 @@ As the name of DSSS implies, some "spreading" occures -- the information is spre
 The following time plot has the same time scale as the first two plots, showing the two phase shifts from the PRN signal.
 The spreading enhances noise resistance through the "despreading" gain, or the [process gain](https://en.wikipedia.org/wiki/Process_gain).
 
-![The output signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/noisy-plots/4-Output-signal.png)
+![The output signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/not-noisy-plots/4-Output-signal.png)
 
 ## The receiving end
 
@@ -264,7 +264,7 @@ reference_carrier_signal = sp.resample(sp.sosfiltfilt(sos, carrier_signal * mixe
 
 The reference carrier signal and its spectrum are shown in the following plots.
 
-![The refernece signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/noisy-plots/9-Reference-carrier-signal.png)
+![The refernece signal and its spectrum](https://luka.strizic.info/fig-dsss-illustrated/not-noisy-plots/9-Reference-carrier-signal.png)
 
 Before multiplication/demodulation, all the signals are binarized so that basic math of -1 times -1 equals 1 applies.
 
