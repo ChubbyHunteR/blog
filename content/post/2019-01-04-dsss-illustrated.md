@@ -305,7 +305,7 @@ def frombits(bits):
 decoded_message = frombits(decoded_message_code)
 ```
 
-If an attempt was made to decode the message with a different PRN code, a wrong message would be read, instead of what was sent intially.
+If an attempt was made to decode the message with a different PRN code, a wrong message would be read, instead of what was sent initially.
 
 ```python
 satellite_vehicle_number_bad = 15
