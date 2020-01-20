@@ -228,6 +228,7 @@ I have used [Thermal Grizzly Kryonaut](https://web.archive.org/web/2019081020000
 
 The case will achieve its main goal: it will cool the CPU and the GPU passively up to 95W each, just perhaps not under long-term maximum load.
 However, I do have a list of grievances:
+
  - Cable management was the hardest part of the assembly (isn't it always?) and that's the weakest point of the whole experience in my opinion.
    The case doesn't leave any room for cable routing and feels quite low-end in that regard.
    Making the case taller with proper routing options beneath the motherboard would be a huge plus, I believe.
