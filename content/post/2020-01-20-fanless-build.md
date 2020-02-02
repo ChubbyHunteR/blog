@@ -263,8 +263,8 @@ To find those values, that are stable under load, I've tested with FurMark.
 Long term full load testing with Prime95 and FurMark inevitably leads to thermal throttling.
 Long term gaming loads, naturally, do not cause any thermal throttling.
 It should be noted that the case gets very hot to the touch during long term load.
-I don't think that posting hard numbers here makes sense, as I can't perform the tests in a controlled environment.
-A ballpark is that during multi-hour gaming loads the CPU and GPU would go up to 80 degrees Celsius and during synthetic load they would reach 95 degrees Celsisus in around 30 minutes.
+I don't think that posting hard numbers here makes sense, as I can't perform the tests in a controlled environment, but the figure below shows temperatures of the CPU and the GPU after around 20 minutes of Prime95 and FurMark.
+A ballpark is that during multi-hour gaming loads the CPU and GPU would go up to 80 degrees Celsius and during synthetic load they would reach 95 degrees Celsisus in 20 to 30 minutes.
 
 ![Prime95 and FurMark testing.](https://luka.strizic.info/fig-fanless-desktop/thermal-01.jpg)
 
