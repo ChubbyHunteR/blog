@@ -17,14 +17,14 @@ Want more performance?
 Sure, but you might need a bigger case to fit more powerful hardware and more fans to circulate more air to cool the components down, thus causing more noise.
 Price usually follows the other qualities, in the sense that the more extreme you want to be in any of the categories -- smaller size, more performance or less noise -- the more you'll have to pay.
 Most often, in the realm of consumer hardware and sane prices, one can pick only one of the qualities for the PC to excel at.
-Reasonbly, most people go for performance, so an average gaming PC would be a mini or a mid tower, with a mid-range CPU, a high-end graphics card and a few fans on the case to provide a steady flow of fresh air.
+Reasonably, most people go for performance, so an average gaming PC would be a mini or a mid tower, with a mid-range CPU, a high-end graphics card and a few fans on the case to provide a steady flow of fresh air.
 Depending on the budget, an HDD is included in such a build for more storage space compared to an equally priced SSD and the power supply is very likely a unit with a fan for active cooling during load.
 The count of components that make noise in such a mid-range build is easily more than four: CPU fan, graphics card fan or two, PSU fan, one or more case fans and an HDD.
 
 I did not want my PC to be an average PC!
-I wanted to try to maximize any of the three qualities, with the only strict condition of at least having enough performance to occasionally fluidly play an AAA game at 1980 by 1200 pixel resolution with at least high in-game video quality settings. 
+I wanted to try to maximize any of the three qualities, with the only strict condition of at least having enough performance to occasionally fluidly play a AAA game at 1920 by 1200 pixel resolution with at least high in-game video quality settings. 
 
-Small computors exist -- RaspberryPi is one of the most popular small computers -- but going to that extreme would come at a significant performance penalty, therefore the only strict requirement would not be satisfied, so I opted not to chase the size extreme.
+Small computers exist -- RaspberryPi is one of the most popular small computers -- but going to that extreme would come at a significant performance penalty, therefore the only strict requirement would not be satisfied, so I opted not to chase the size extreme.
 
 Maximizing performance was an option, but almost an endless money and time pit.
 There is always another thing one can do for better performance.
@@ -55,7 +55,7 @@ The only rare case with enough room to accommodate a graphics card and an intern
 An alternative was the [Streacom DB4](https://web.archive.org/web/20190810170047/https://streacom.com/products/db4-fanless-chassis/), but the HDPLEX H5 has nominally more powerful cooling, so I went with it.
 
 Worth a mention is the [Calyos NSG S0](https://web.archive.org/web/20190810170234/https://www.kickstarter.com/projects/1489140137/nsg-s0-worlds-first-fanless-chassis-for-high-perfo/) that was still up for preorder when I was looking to buy.
-However, it turned out that Calyos scammed people who preordered or mismanaged the funds and ended up without a working product, so I was lucky to dogde a bullet there.
+However, it turned out that Calyos scammed people who preordered or mismanaged the funds and ended up without a working product, so I was lucky to dodge a bullet there.
 Lesson learned about preorders!
 According to a few Reddit threads, part of the Calyos team went on to found MonsterLabo which at the time of writing (late 2019) offers an interesting fanless case, [The First](https://web.archive.org/web/20190810170555/https://www.monsterlabo.com/the-first-1) and just the cooler used in the The First, called [The Heart](https://web.archive.org/web/20191201214100/https://www.monsterlabo.com/page-d-articles/the-heart).
 Based on the easily discoverable reviews and as the name implies, it really seems like a company's first attempt at a PC case.
@@ -73,7 +73,7 @@ Low efficiency at idle loads is not a problem, because the total power turned in
 I had a rough idea of the maximum power the system could draw as it is limited by how much of that power can be dissipated by the case: nominally 95W CPU and 95W GPU, so a 190W total plus a few dozen watts for the rest of the system, and it was obvious that even the lowest power PSU would be enough.
 ATX units, as opposed to the smaller SFX units, are generally more efficient, so I went with the most efficient consumer power supply available on the market at the time, the [600W Seasonic PRIME Titanium Fanless](https://web.archive.org/web/20190810173455/https://seasonic.com/prime-titanium-fanless).
 Even if that unit wasn't fanless, it would have likely used a fanless mode for low power loads, as the passive coolers in it could successfully dissipate that small amount of heat.
-Therefore, such a high-end pick might be overkill, but is greener overall.
+Therefore, such a high-end pick is an overkill from a power standpoint, but could be greener overall, depending on the exact load and the efficiency curve of the unit.
 
 ### Motherboard
 
@@ -90,7 +90,7 @@ Overclocking was out of the question, because CPUs that fit the available power 
 However, I still wanted the highest-end CPU I could get, so I went for the Intel i7-8700 (non-K).
 I planned to delid the CPU and keep it undervolted for less power consumption, but in hindsight, I should have gone with the K CPU version, due to potentially better binning, thus enabling more undervolting.
 Furthermore, I believe it is better picking a more powerful CPU than the case can handle and then lowering its voltage and clock to achieve maximum performance without thermal throttling, as opposed to buying a less powerful CPU and leaving unused thermal headroom.
-Of course, had the CPU cost been a big issues, the latter option might have been the preferred one.
+Of course, had the CPU cost been an issues, the latter option might have been the preferred one.
 
 ### Graphics card
 
@@ -98,7 +98,7 @@ Same ideas that apply to the CPU selection apply to the graphics card selection 
 I wanted to pick the most powerful card that fit in the thermal budget with a preferred overshoot rather than an undershoot, when it comes to performance and power consumption.
 The 6GB GTX 1060 was a clear winner and when picking the manufacturer, I wanted to get one with the best VRM design.
 I could not find too much information and didn't know whether the Eastern European market has the same products as Central or Western Europe, so other factors were size and price as well.
-Finally, I picked a reasonably priced entry-level Giagabyte GTX 1060 and planned an undervolt.
+Finally, I picked a reasonably priced entry-level Gigabyte GTX 1060 and planned an undervolt.
 I did not go for the Mini version as I was afraid the smaller design would have less VRMs, nor did I go for the biggest one as I didn't need the extra fans on the stock cooler and I could not fit it in the case.
 
 ### SSD
@@ -132,7 +132,7 @@ The damage is clearly visible in the following images.
 ![CPU damage from improper delidding.](https://luka.strizic.info/fig-fanless-desktop/delidding-06.jpg)
 
 Despite the damage, the CPU had nominal performance and thermals.
-All the features that I tested worked ok, with the exception that one memory channel was unavailable and the RAM in the corresponding meomry slot on the motherboard was not seen by the OS or the BIOS.
+All the features that I tested worked ok, with the exception that one memory channel was unavailable and the RAM in the corresponding memory slot on the motherboard was not seen by the OS or the BIOS.
 According to the CPU pinout that I found on WikiChip, the pins directly beneath the split part of the layers are DIMM 1 pins, so that exact DIMM slot not working was not too big big a suprise.
 [This Coffee Lake pin diagram](https://web.archive.org/web/20191218221353/https://en.wikichip.org/w/images/a/a4/coffee_lake_pin_diagram.png) is quite low definition, making it hard to read which pin is connected to what, but [this Skylake / Kaby Lake pin diagram](https://web.archive.org/web/20191218221708/https://en.wikichip.org/w/images/9/9f/skylake_pin_diagram.png) shares much of the same connections and is higher definition.
 The pins that I damaged are at the upper edge in the diagrams.
@@ -232,7 +232,7 @@ However, I do have a list of grievances:
  - Cable management was the hardest part of the assembly (isn't it always?) and that's the weakest point of the whole experience in my opinion.
    The case doesn't leave any room for cable routing and feels quite low-end in that regard.
    Making the case taller with proper routing options beneath the motherboard would be a huge plus, I believe.
- - Having more openings on top for additional convenction could perhaps lower the temperature by a degree or two.
+ - Having more openings on top for additional convection could perhaps lower the temperature by a degree or two.
  - Leaving more horizontal space around USB sockets for wider USB plugs would be useful.
  - More space around the 3.5 mm audio socket would make it much easier to plug devices in and out, which is quite troublesome now or downright impossible for people with larger fingers.
  - The USB 2.0 and USB 3.0 sockets are oriented differently. USB 2.0 is upside down.
@@ -240,19 +240,23 @@ However, I do have a list of grievances:
  - The power button requires manual assembly as well as manual tuning of the travel depth in four places. Also, it can be easily shorted on the other side, inside the case.
  - One of the edges of the top panel looks chipped away.
 
-None of the thigns that I listed affect performance, which I am quite happy with, but overall it shows that the attention to detail just isn't there or that I'm not the target audience.
+None of the things that I listed affect performance, which I am quite happy with, but overall it shows that the attention to detail just isn't there or that I'm not the target audience.
 I believe that if HDPLEX took these things into account and improved them in the next iteration, they'd make a really awesome case attractive to slightly broader audiences.
 
 ## Undervolting
 
 I've used the Intel Xtreme Tuning Utility to change the voltage offset on the CPU and would test the stability with Prime95.
-The lowest stable offset that I've found is -100mV on my sample of the CPU, without sacrificing any clock.
+The lowest stable offset that I've found is -50mV on my sample of the CPU, without sacrificing any clock.
+I have left the load-line calibration at level 5, which compensates for voltage droop the least.
+Testing with level 1 showed that a lot more voltage is applied with the same VID at load, which is the opposite of what I want.
 To make the change permanent, I have entered it into UEFI.
-Furthermore, I have had to limit the long term CPU power to 95 watts to make the CPU not throttle too early.
+Furthermore, I have had to limit the long term CPU power to 90 watts to make the CPU not throttle with Prime95 alone.
 
 The clock and voltage of the GPU can not be controlled directly like the CPU's, with an offset, and varies a lot depending on the thermal headroom.
-I have used MSI Afterburner to overclock the GPU, but have also lowered the Power Limit, so that in practice same clocks are achieved with less power, thus effectively undervolting the GPU.
-To find values stable under load, I've tested with FurMark.
+I have used MSI Afterburner to overclock the GPU by an additional 150 MHz, but have also lowered the Power Limit to 95%, so that in practice same clocks are achieved with less power, thus effectively undervolting the GPU.
+I've left the memory clock the same, as there is no active or passive cooling on the memory chips.
+I did not have a lot of success in modifying the frequency-voltage curve, as the GUI is not friendly and the settings would have a hard time sticking across reboots because they would stick to specific values.
+To find those values, that are stable under load, I've tested with FurMark.
 
 ## Thermal performance
 
@@ -261,6 +265,8 @@ Long term gaming loads, naturally, do not cause any thermal throttling.
 It should be noted that the case gets very hot to the touch during long term load.
 I don't think that posting hard numbers here makes sense, as I can't perform the tests in a controlled environment.
 A ballpark is that during multi-hour gaming loads the CPU and GPU would go up to 80 degrees Celsius and during synthetic load they would reach 95 degrees Celsisus in around 30 minutes.
+
+![Prime95 and FurMark testing.](https://luka.strizic.info/fig-fanless-desktop/thermal-01.jpg)
 
 During a multi-hour testing session the WiFi card on the motherboard died.
 It could not be detected in Windows nor Linux, as if it was disconnected.
